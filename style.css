@@ -10,6 +10,7 @@
 .wrapper{
     padding: 2em 1.5em 0 1.5em;
     background: white;
+    position: relative;
 }
 .top h2{
     margin-top: 1em;
@@ -76,7 +77,46 @@ footer{
     font-weight: 400;
     font-size: small;
 }
+.desktop{
+    display: none;
+}
+.top-mobile{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+.bottom-mobile{
+    position: absolute;
+    top: 85%;
+    right: 0;
+    z-index: 1;
+    height: 50vh;
+}
 @media only screen and (min-width: 769px)  {
+    .wrapper{
+        margin: 2em;
+        position: relative;
+    }
+    .desktop{
+        display: block;
+    }
+    .mobile{
+        display: none;
+    }
+    .topp{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .bottom{
+        position: absolute;
+        top: 10%;
+        right: 0;
+        z-index: 1;
+    }
     .row{
         display: flex;
         flex-direction: row;
